@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Мобильное приложение от Сити-Мобил</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <section class="block-1">
+            <div class="block-1-left">
+                <div class="block-1-left-item">
+                    <div class="block-1-left_logo"></div>
+                    <h1>Экономь <br>на поездках <br><span class="orange">в 2 клика!</span></h1>
+                    <div class="block-1-left_text">Скачай приложение -<br> закажи такси онлайн</div>
+                    <div class="block-1-left_app">
+                        <a href="https://app.appsflyer.com/com.citymobil?pid=Citymobil&c=landing_app" class="block-1-left_app_google">
+                            <img src="img/google-play.svg" alt="Гугл">
+                        </a>
+                        <a href="https://app.appsflyer.com/id579220388?pid=Citymobil&c=landing_app" class="block-1-left_app_apple">
+                            <img src="img/app-store.svg" alt="Эпл">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="block-1-center"></div>
+            <div class="block-1-right"></div>
+            <div class="block-1-bottom">
+                <div class="block-1-bottom-left">
+                    <div>Меняй привычки, не думай о цене! </div>
+                </div>
+                <div class="block-1-bottom-right">
+                    <div>Агрегатор такси Ситимобил — это дешевое такси по Москве и Московской области. У нас нет повышающих коэффициэнтов, а это значит, что цены не растут в праздники и часы пик.</div>
+                </div>
+            </div>
+        </section>
+        <section class="block-2">
+            <div class="block-2-center"></div>
+        </section>
+        <section class="block-3">
+            <div class="block-3-left">
+                <div class="block-3-left-text">
+                    <div class="block-3-left-text_title">Поездки от 89 рублей</div>
+                    <div>Специально для пользователей приложения «Ситимобил» мы ввели новый тариф «Эконом». Теперь поездки в приложении Ситимобил стоят от 89 рублей! </div>
+                </div>
+                <div class="block-3-left-img">
+                    <div class="block-3-left-img_price">Ваш бонус: <br> <span>400</span>₽</div>
+                </div>
+            </div>
+            <div class="block-3-right">
+                <div class="block-3-right-img"></div>
+                <div class="block-3-right-text">
+                    <div class="block-3-right-text_title">Новым <br>пользователям – <br>скидки!</div>
+                    <div>Мы дарим новым пользователям скидку на 400 рублей: по 100 рублей на каждую из первых четырех поездок. Просто активируйте в приложении промокод «FREE400» и вперед!</div>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+
+    <section class="block-4">
+        <div class="container">
+            <div class="block-4-title">Установите приложение прямо сейчас!</div>
+            <p>Получить ссылку для скачивания на телефон:</p>
+        </div>
+        <div class="phone-container">
+            <input class="phone" type="text" placeholder="+7 " />
+            <button class="js-OpenModal">Отправить!</button>
+        </div>
+        <div class="block-4_app">
+            <a href="https://app.appsflyer.com/com.citymobil?pid=Citymobil&c=landing_app" class="block-4_app_google">
+                <img src="img/google-play-1.svg" alt="Гугл">
+            </a>
+            <a href="https://app.appsflyer.com/id579220388?pid=Citymobil&c=landing_app" class="block-4_app_apple">
+                <img src="img/app-store-1.svg" alt="Эпл">
+            </a>
+        </div>
+    </section>
+    <div class="modals">
+        <div class="modals__overlay">
+        </div>
+        <div class="modals__content">
+            <div id="modal">
+                <div class="block-1-left_logo"></div>
+                <div class="modal-text">Ссылка для скачивания была отправлена на ваш номер телефона.</div>
+                <a class="close"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+        var scrolledY = $(window).scrollTop()-1293;
+        $('.block-2-center').css('background-position', 'left ' + ((scrolledY)) + 'px');
+        });
+    </script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
