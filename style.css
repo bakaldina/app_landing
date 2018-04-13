@@ -8,7 +8,6 @@ body {
     font-size: 22px;
     color: #000;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 700px;
 }
 /* Блок 1 */
 
@@ -174,8 +173,11 @@ h1:after {
     width: 100%;
     font-size: 0;
     height: 1836px;
-    margin: auto;
+    overflow: hidden;
+ }
+ .block-3_content {
     max-width: 1000px;
+    margin: auto;
  }
  .block-3-left {
     display: inline-block;
@@ -208,7 +210,7 @@ h1:after {
     background-image: url(img/block-3-1.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 1293px;
+    height: 1288px;
     width: 820px;
     top: 60px;
     left: -314px;
@@ -271,7 +273,6 @@ h1:after {
     margin: auto;
 }
 .page-wrapper{
-    z-index: 4;
     position: relative;
     background-color: white;
 }
@@ -283,7 +284,6 @@ h1:after {
     height: 700px;
     margin: auto;
     text-align: center;
-    position: fixed;
     bottom: 0;
     z-index: 2;
 }
@@ -321,8 +321,11 @@ h1:after {
 }
 label#ph-error {
     position: absolute;
-    left: 41%;
     top: -11px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .phone {
     display: inline-block;
@@ -382,7 +385,7 @@ label#ph-error {
 }
 .modals__content {
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 10;
   position: relative;
 }
 .modals__overlay {
