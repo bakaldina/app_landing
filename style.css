@@ -310,9 +310,20 @@ h1:after {
  .block-4_app_google {
      margin-right: 17px;
  }
- .phone-container {
 
+
+ .phone-container {
+    position: relative;
  }
+ .error {
+    color: red;
+    font-size: 18px;
+}
+label#ph-error {
+    position: absolute;
+    left: 41%;
+    top: -11px;
+}
 .phone {
     display: inline-block;
     vertical-align: top;
@@ -323,7 +334,7 @@ h1:after {
     margin: 20px 0 70px 0;
     font-size: 20px;
 }
-.phone-container button {
+.phone-container .button {
     display: inline-block;
     vertical-align: top;
     border: 0;
@@ -337,11 +348,11 @@ h1:after {
     height: 65px;
     padding: 0;
 }
-.phone-container button:hover,
-.phone-container button:active{
+.phone-container .button:hover,
+.phone-container .button:active{
     opacity: 1;
 }
-.phone-container button:focus {
+.phone-container .button:focus {
     outline: none;
 } 
 .phone:focus {
@@ -416,3 +427,4 @@ h1:after {
     transform: rotate(-45deg);
 }
 
+  

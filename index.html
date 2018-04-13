@@ -41,20 +41,22 @@
             <div class="block-2-center"></div>
         </section>
         <section class="block-3">
-            <div class="block-3-left">
-                <div class="block-3-left-text">
-                    <div class="block-3-left-text_title">Поездки от 89 рублей</div>
-                    <div>Специально для пользователей приложения «Ситимобил» мы ввели новый тариф «Эконом». Теперь поездки в приложении Ситимобил стоят от 89 рублей! </div>
+            <div class="block-3_content">
+                <div class="block-3-left">
+                    <div class="block-3-left-text">
+                        <div class="block-3-left-text_title">Поездки от 89 рублей</div>
+                        <div>Специально для пользователей приложения «Ситимобил» мы ввели новый тариф «Эконом». Теперь поездки в приложении Ситимобил стоят от 89 рублей! </div>
+                    </div>
+                    <div class="block-3-left-img">
+                        <div class="block-3-left-img_price">Ваш бонус: <br> <span>400</span>₽</div>
+                    </div>
                 </div>
-                <div class="block-3-left-img">
-                    <div class="block-3-left-img_price">Ваш бонус: <br> <span>400</span>₽</div>
-                </div>
-            </div>
-            <div class="block-3-right">
-                <div class="block-3-right-img"></div>
-                <div class="block-3-right-text">
-                    <div class="block-3-right-text_title">Новым <br>пользователям – <br>скидки!</div>
-                    <div>Мы дарим новым пользователям скидку на 400 рублей: по 100 рублей на каждую из первых четырех поездок. Просто активируйте в приложении промокод «FREE400» и вперед!</div>
+                <div class="block-3-right">
+                    <div class="block-3-right-img"></div>
+                    <div class="block-3-right-text">
+                        <div class="block-3-right-text_title">Новым <br>пользователям – <br>скидки!</div>
+                        <div>Мы дарим новым пользователям скидку на 400 рублей: по 100 рублей на каждую из первых четырех поездок. Просто активируйте в приложении промокод «FREE400» и вперед!</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -65,10 +67,16 @@
             <div class="block-4-title">Установите приложение прямо сейчас!</div>
             <p>Получить ссылку для скачивания на телефон:</p>
         </div>
-        <div class="phone-container">
+        <!-- <div class="phone-container">
             <input class="phone" type="text" placeholder="+7 " />
             <button class="js-OpenModal">Отправить!</button>
-        </div>
+        </div> -->
+        <form class="phone-container">
+            <label>
+                <input type="text" class="js-phone phone" name="ph" placeholder="+7 " data-rule-required="true" data-rule-minlength="10" data-msg="Неправильный формат номера.">
+            </label>
+            <input type="submit" class="button" value="Отправить!">
+        </form>
         <div class="block-4_app">
             <a href="https://app.appsflyer.com/com.citymobil?pid=Citymobil&c=landing_app" class="block-4_app_google">
                 <img src="img/google-play-1.svg" alt="Гугл">
@@ -92,12 +100,22 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    
+
     <!-- <script>
         $(window).scroll(function() {
-        var scrolledY = $(window).scrollTop()-1200;
+        var scrolledY = $(window).scrollTop()-1100;
+        $('.block-2-center').css('background-position', 'left ' + ((scrolledY)) + 'px');
+        var scrolledY1 = $(window).scrollTop()-600;
+        $('.block-2-center').css('bottom', ((scrolledY)) + 'px');
         $('.block-2').css('background-position', 'left ' + ((scrolledY)) + 'px');
+        // $('.block-3').css('position', '');
         });
     </script> -->
+    
     <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
