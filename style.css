@@ -143,6 +143,7 @@ h1:after {
  /* Блок 2 */
 
  .block-2 {
+     overflow: hidden;
     position: relative;
     width: 100%;
     font-size: 0;
@@ -160,9 +161,9 @@ h1:after {
     left: 50%;
     width: 1032px;
     transform: translate(-50%,0);
-    background-image: url(img/block-2.png);
+    /* background-image: url(img/block-2.png);
     background-repeat: no-repeat; 
-    background-size:cover;
+    background-size:cover; */
     height: 100%;
     z-index: 1;
 } 
