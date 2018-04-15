@@ -157,20 +157,17 @@ h1:after {
 
 .block-2-center {
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     left: 50%;
     width: 1032px;
-    transform: translate(-50%,13%);
-    /* background-image: url(img/block-2.png);
+    transform: translate(-50%,0);
+    background-image: url(img/block-2.png);
     background-repeat: no-repeat; 
-    background-size:cover; */
-    height: 100%;
+    background-size:contain;
+    background-position:left bottom;
+    height: 150%;
     z-index: 1;
 } 
-.block-2-center img{
-    position: absolute;
-    display: block !important;
-}
 
  /* Блок 3 */
 
