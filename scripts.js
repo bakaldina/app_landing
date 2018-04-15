@@ -24,30 +24,44 @@
 //     } 
 // });
 
-jQuery.validator.addMethod("checkMask", function(value, element) {
-    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
-  });
+// jQuery.validator.addMethod("checkMask", function(value, element) {
+//     return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+// });
   
-  $('form').validate();
-  $.validator.addClassRules({
+$.stellar({
+    horizontalScrolling: false,
+    verticalOffset: 40
+});
+
+$('form').validate({
+    debug: true
+});
+
+$.validator.addClassRules({
     'js-phone': {
-      checkMask: true
+        checkMask: true
     }
-  });
-  $('.js-phone').mask("+7(999)999-9999", {
-    autoclear: false
-  });
-  $("form").submit(function(e){
+});
+
+// $('.js-phone').mask("+7(999)999-9999", {
+//     autoclear: false
+// });
+
+$("form").submit(function(e){
+    console.log(1);
     e.preventDefault();
     var phone = $('.js-phone').val().replace(/\D/g,'');
+    console.log(phone);
     if (phone.length !== 11) {
-      return;
+        console.log(2);
+        return;
     }
 
     var tokenName = $("meta[name=csrf-token-name]").prop("content");
     var token = $("meta[name=csrf-token]").prop("content");
 
     $.get("/", {phone: phone}, function(response) {
+        console.log(3);
         var openbutton = document.querySelector('.js-OpenModal');
         var modalwindow = document.querySelector('.modals');
         var closebutton = document.querySelector('.modals .close');

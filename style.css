@@ -8,6 +8,7 @@ body {
     font-size: 22px;
     color: #000;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 700px;
 }
 /* Блок 1 */
 
@@ -275,9 +276,10 @@ h1:after {
 .page-wrapper{
     position: relative;
     background-color: white;
+    z-index: 10;
 }
 .block-4 {
-    position: relative;
+    position: fixed;
     background-color: #000;
     width: 100%;
     font-size: 0;
@@ -351,8 +353,7 @@ label#ph-error {
     height: 65px;
     padding: 0;
 }
-.phone-container .button:hover,
-.phone-container .button:active{
+.phone-container .button:hover{
     opacity: 1;
 }
 .phone-container .button:focus {
@@ -378,7 +379,7 @@ label#ph-error {
   width: 700px;
   left: 50%;
   top: 50%;
-  z-index: 2;
+  z-index: 20;
 }
 .modals.show{
     display: block;
@@ -429,5 +430,3 @@ label#ph-error {
 .modals .close:after {
     transform: rotate(-45deg);
 }
-
-  
