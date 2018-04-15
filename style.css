@@ -160,7 +160,7 @@ h1:after {
     bottom: 0;
     left: 50%;
     width: 1032px;
-    transform: translate(-50%,0);
+    transform: translate(-50%,13%);
     /* background-image: url(img/block-2.png);
     background-repeat: no-repeat; 
     background-size:cover; */
