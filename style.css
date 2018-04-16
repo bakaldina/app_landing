@@ -152,15 +152,14 @@ h1:after {
 
 .block-2-center {
     position: absolute;
-    bottom: 50%;
+    top: 0;
     left: 50%;
     width: 1032px;
     transform: translate(-50%,0);
     background-image: url(img/block-21.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left bottom;
-    height: 2500px;
+    background-size: cover;
+    height: 151%;
     z-index: 1;
 } 
 
