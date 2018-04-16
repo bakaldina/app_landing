@@ -30,7 +30,7 @@
   
 $.stellar({
     horizontalScrolling: false,
-    verticalOffset: 40
+    verticalOffset: 10
 });
 
 $('form').validate({
@@ -57,7 +57,7 @@ $("form").submit(function(e){
         return;
     }
 
-    var tokenName = $("meta[name=csrf-token-name]").prop("content");
+    var tokenName = $("meta[name=csrf-token-name]").prop("content"); // 
     var token = $("meta[name=csrf-token]").prop("content");
 
     $.get("/", {phone: phone}, function(response) {
@@ -69,12 +69,14 @@ $("form").submit(function(e){
         modalwindow.classList.add("show");
         var closebutton = document.querySelector('.modals .close');
         var modalsOverley = document.querySelector('.modals__overlay');
+
         modalsOverley.onclick = function() {
             modalwindow.classList.remove("show");
         }
         closebutton.onclick = function() {
             modalwindow.classList.remove("show");
         }
+        
     });
 });
   
