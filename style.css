@@ -140,11 +140,9 @@ h1:after {
  /* Блок 2 */
 
  .block-2 {
-     overflow: hidden;
+    overflow: hidden;
     position: relative;
     width: 100%;
-    font-size: 0;
-    background-attachment: fixed;
     height: 786px;
     background-image: linear-gradient(to right,#f05a33 50%, #f5f5f5 50%);
     -webkit-box-shadow: inset 0px -10px 30px -13px rgba(0,0,0,0.75);
@@ -154,15 +152,15 @@ h1:after {
 
 .block-2-center {
     position: absolute;
-    bottom: 0%;
+    bottom: 50%;
     left: 50%;
     width: 1032px;
     transform: translate(-50%,0);
     background-image: url(img/block-21.png);
-    background-repeat: no-repeat; 
-    background-size:contain;
-    background-position:left bottom;
-    height: 200%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    height: 2500px;
     z-index: 1;
 } 
 

@@ -30,7 +30,7 @@
   
 $.stellar({
     horizontalScrolling: false,
-    verticalOffset: 10
+    verticalOffset: 40
 });
 
 $('form').validate({
